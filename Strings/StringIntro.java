@@ -35,5 +35,7 @@ public class StringIntro {
         // Substring
         System.out.println(str1.substring(5));
         System.out.println(str1.substring(1, 5));
+
+        // The end of string is marked with a special character called Null Character
     }
 }
