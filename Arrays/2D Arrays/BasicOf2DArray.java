@@ -5,6 +5,9 @@ public class BasicOf2DArray {
         int arr[][] = new int[3][4];
         System.out.println(arr[1][2]);
 
+        System.out.println(arr.length); // 3 rows
+        System.out.println(arr[0].length); // 4 cols in each row
+
         arr[2][1] = 12;
         System.out.println(arr[2][1]);
 
