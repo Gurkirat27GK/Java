@@ -1,14 +1,17 @@
 // Approach: Start i from 0 and look for 0. Start j from end. If found any zero, swap i with j and decrease j. If not found keep increasing i.
 // One more Way (for maintaining sequence of other numbers)
 /*
- int  k = 0;
-        for (int i = 0; i < nums.length; i++){
-            if(nums[i] != 0){
-                nums[k] = nums[i] ^ nums[k];
-                nums[i] = nums[i] ^ nums[k];
-                k++;
-            }
-        }
+ int snowBallSize = 0; 
+ for (int i = 0; i < arr.length; i++){
+    if (arr[i] == 0){
+        snowBallSize++; 
+    }
+    else if (snowBallSize > 0) {
+        int temp = arr[i];
+        arr[i] = 0;
+        arr[i - snowBallSize] = temp;
+    }
+}
  */
 
 import java.util.Scanner;
