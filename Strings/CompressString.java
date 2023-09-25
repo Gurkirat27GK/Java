@@ -1,3 +1,6 @@
+// Input: aabbbcddab
+// Output: a2b3cd2ab
+
 import java.util.Scanner;
 
 public class CompressString {
@@ -25,6 +28,7 @@ public class CompressString {
             }
         }
 
+        // for last element
         if (currentCharCount > 1) {
             ans = ans + currentCharCount;
         }
